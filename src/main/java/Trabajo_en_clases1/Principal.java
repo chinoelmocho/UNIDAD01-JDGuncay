@@ -41,7 +41,27 @@ public class Principal {
     System.out.println(progra3.mostrarinformacion());
     System.out.println(progra3.calcularprecio());
  
+    System.out.println("\n \n \n \n");
     
+    var auto1 = new Auto();
+    auto1.marca="Toyota";
+    auto1.placa="ABC25";
+    auto1.propietario="Peres Juanito";
+    System.out.println(auto1.mostrarinfo());
+    System.out.println("El carro es de "+auto1.getPAismarca());
     
+    var auto2 = new Auto();
+    auto2.marca="jetour";
+    auto2.placa="ABC25";
+    auto2.propietario="Peres Juanito";
+    System.out.println(auto2.mostrarinfo());
+    System.out.println("El carro es de "+auto2.getPAismarca());
+    
+    var auto3 = new Auto();
+    auto3.marca="Mercedes Bens";
+    auto3.placa="ABC25";
+    auto3.propietario="Peres Juanito";
+    System.out.println(auto3.mostrarinfo());
+    System.out.println("El carro es de "+auto3.getPAismarca());
     }   
 }
