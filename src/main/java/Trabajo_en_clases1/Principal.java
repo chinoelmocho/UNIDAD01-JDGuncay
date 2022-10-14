@@ -10,7 +10,8 @@ package Trabajo_en_clases1;
  */
 public class Principal {
     public static void main(String [] arga) {
-    var progra = new Asignatura();
+    /*  Clase anterior
+        var progra = new Asignatura();
     progra.codigo=4752;
     progra.costohoras=6;
     progra.horas=200;
@@ -41,16 +42,21 @@ public class Principal {
     System.out.println(progra3.mostrarinformacion());
     System.out.println(progra3.calcularprecio());
  
-    System.out.println("\n \n \n \n");
+    System.out.println("\n \n \n \n");*/
     
     var auto1 = new Auto();
     auto1.marca="Toyota";
     auto1.placa="ABC25";
     auto1.propietario="Peres Juanito";
+    auto1.año =2012;
+    auto1.precio=20000;
+    auto1.color="Rojo";
     System.out.println(auto1.mostrarinfo());
-    System.out.println("El carro es de "+auto1.getPAismarca());
+    System.out.println("El carro es de "+auto1.getPAismarca()+" ademas circula por "+auto1.getProvincia()+" \n El numero de continente del auto es de "+auto1.getNumeroContinente());
+    System.out.println("\nEl automovil conto con un iva de "+auto1.calcularIva()+"\nAdemas el precio comercial actual del carro es de "+auto1.calcularDepreciacion(2022)+"\nAdemas el costo de la matricula es de "+auto1.costodematricula(2022)+" y su estado para poder asegurar su carro es "+auto1.sepuedeasegurar(2022));
     
-    var auto2 = new Auto();
+    
+    /*var auto2 = new Auto();
     auto2.marca="jetour";
     auto2.placa="ABC25";
     auto2.propietario="Peres Juanito";
@@ -62,6 +68,6 @@ public class Principal {
     auto3.placa="ABC25";
     auto3.propietario="Peres Juanito";
     System.out.println(auto3.mostrarinfo());
-    System.out.println("El carro es de "+auto3.getPAismarca());
+    System.out.println("El carro es de "+auto3.getPAismarca());*/
     }   
 }
