@@ -2,15 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.unidad01.jdguncay.nacabrera;
+package Unidad01_DGuncay_CANicolas;
 
 /**
  *
  * @author David
  */
-public class Zapatos {
-    String modelo;
+public class Computadora {
     String marca;
-    int talla;
-    String color;
+    int numSerie;
+    String modelo;
+    int garantia;
 }
