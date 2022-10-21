@@ -26,11 +26,10 @@ public class Arreglo {
         var retorno = new int[f][c];
         var lectura = new Scanner(System.in);
         for (int i = 0; i < f ; i++){
-        for (int j = 0; j < f ; j++){
-        System.out.println("Ingrese el valor de la pocicion [" + (i + 1) + "]" + "[" + (j + 1) + "]");
-            retorno[i][j] = lectura.nextInt();
+        for (int m = 0; m < f ; m++){
+        System.out.println("Ingrese el valor de la pocicion [" + (i + 1) + "]" + "[" + (m + 1) + "]");
+            retorno[i][m] = lectura.nextInt();
         }
-        return retorno;
         }
         
         return retorno;
