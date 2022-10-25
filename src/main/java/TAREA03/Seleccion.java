@@ -12,9 +12,9 @@ public class Seleccion {
     String codigoFIFA;
     String nombre;
     String pais;
-    String jugador;
+    String jugadorstelar;
     int participacionEnElMundial;
-    String Tecnico;
+    Director tecnicosprt;
     
  public String obtienePais(){
     var retorno="Desconocido";

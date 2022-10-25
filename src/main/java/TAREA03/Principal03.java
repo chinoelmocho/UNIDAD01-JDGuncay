@@ -10,15 +10,20 @@ package TAREA03;
  */
 public class Principal03 {
     public static void main(String[] args){
-        
+      
+    var Directorz=new Director();
+    Directorz.nombre="Pablito";
+    Directorz.paisdeorigen="Ecuador";
+    Directorz.yearnacimiento=1998;
+    
     var Ecuador =new Seleccion();
     Ecuador.codigoFIFA="S324";
     Ecuador.nombre="Ernesto de la cruz";
     Ecuador.pais="ECU";
     Ecuador.participacionEnElMundial=10;
-    Ecuador.Tecnico="Victos Salamanca";
-    
+    Ecuador.tecnicosprt=Directorz;
     var enner=new Jugador();
+    
     enner.nombre ="Benito Juares";
     enner.posicion="Defensa";
     enner.fechadeNacimeinto=1998;

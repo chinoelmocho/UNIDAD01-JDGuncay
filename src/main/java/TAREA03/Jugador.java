@@ -15,7 +15,7 @@ public class Jugador {
     Seleccion equipo;
     
     public String getInfo(){
-     return "EL nombre es "+this.nombre+"y nacio el dia: "+this.fechadeNacimeinto +"Esta en en equipo: "+this.equipo.pais +" Con un tecnico "+this.equipo.Tecnico; 
+     return "EL nombre es "+this.nombre+"y nacio el dia: "+this.fechadeNacimeinto +"Esta en en equipo: "+this.equipo.pais +" Con un tecnico "+this.equipo.tecnicosprt.nombre; 
     
     }
     
