@@ -10,67 +10,40 @@ package DEBER003;
  */
 public class Principalx {
     public static void main (String[] args){
-    var provincia1 =new Provincia();
-    provincia1.nomProvincia="Azuay";
-    provincia1.lema="Somo de agua";
-    provincia1.capital="Cuanca";
-    provincia1.subdiviciones=15;
     
-    var pais1=new Pais();
-    pais1.nombrePais="Ecuador";
-    pais1.numeroContinente=2;
-    pais1.poblacion="17.89 millnes";
+    var pais1=new Pais("Ecuador",2,"17.89 millones");
+    var provincia1 =new Provincia("Azuay","Somos de agua","Cuenca",15,pais1);
+    var ciudad1=new Ciudad("Gualaceo","Gustavo Vera",2448,provincia1);
     
-    var ciudad1=new Ciudad();
-    ciudad1.nombreCiudad ="Gualaceo";
-    ciudad1.alcalde="Gustavo Vera";
-    ciudad1.Altitud=2448;
-    ciudad1.nomProvincia=provincia1;
-    ciudad1.nomPais=pais1;
+    var pais2=new Pais("Chile",2,"19.21 millones");
+    var provincia2 =new Provincia("Region Tarapaca","Ciudad Heroica","Iquique",2,pais2);
+    var ciudad2=new Ciudad("Alto Hospicio","Julio Pérez Silva",600,provincia2);
     
     System.out.println(ciudad1.getinfoCiudad());
+     System.out.println(ciudad2.getinfoCiudad());
     System.out.println("-------------------------------------------------------------------");
     
-   var cliente1=new Cliente();
-   cliente1.nombreCliente="Juan David Guncay Orellana";
-   cliente1.cedula="0106195951";
-   cliente1.direccion="Manuel Guillen y Vazques Correa";
-   cliente1.ciudad="Gualaceo";
-   cliente1.ifVIP=true;
+   var cliente1=new Cliente("Juan David Guncay Orellana","0106195951","Manuel Guillen y Vazques Correa","Gualaceo",true);
+   var producto1 =new Producto("esfero",1.33,"022554",10);
+   var factura1=new Factura("N10",cliente1,producto1);
    
-   var producto1 =new Producto();
-   producto1.tipoProducto="esfero";
-   producto1.cantidad=10;
-   producto1.numSerie="022554";
-   producto1.precioProducto=1.33;
-  
-   var factura1=new Factura();
-   factura1.numFac="N10";
-   factura1.productoComprado=producto1;
-   factura1.whoCliente=cliente1;
+   var cliente2=new Cliente("Nicolas Anthoni Cabrera","0103636985","Gran Colombia y Reyes","Cuanca",false);
+   var producto2 =new Producto("calculadora",30,"023396",8);
+   var factura2=new Factura("N100",cliente2,producto2);
    
    System.out.println(factura1.getinfoFactura());
+    System.out.println(factura2.getinfoFactura());
    System.out.println("-------------------------------------------------------------------");        
     
-   var estudiante1=new Estudiante();
-   estudiante1.cedula="0106195951";
-   estudiante1.nombreEstudiante="Juan David Guncay Orellana";
-   estudiante1.numMatricula=2;
-   estudiante1.sede="Cuenca";
-   estudiante1.universidad="Universidad Politecnica Saleciana";
+   var estudiante1=new Estudiante("Juan David Guncay Orellana","Universidad Politecnica Saleciana","Cuenca","0106195951",2);
+   var asignatura1=new Asignatura("Calculo de Varias variables",210,"Juan Prealta");
+   var calificacion1= new Calificacion(20,10,asignatura1,estudiante1);
    
-   var asignatura1=new Asignatura();
-   asignatura1.horasTotales=210;
-   asignatura1.nomAsignatura="Calculo de Varias variables";
-   asignatura1.profesor="Juan Prealta";
-   
-   var calificacion1= new Calificacion();
-   calificacion1.nomAsignatura=asignatura1;
-   calificacion1.nomEstudiante=estudiante1;
-   calificacion1.preguntasCorrectas=10;
-   calificacion1.totalPreguntas=20;
-   
+   var estudiante2=new Estudiante("Sancho Panza Master","Universidad del Pacifico","Cuenca","0306969784",3);
+   var asignatura2=new Asignatura("Ingles A1",100,"Don Quijote");
+   var calificacion2= new Calificacion(100,3,asignatura2,estudiante2);
     System.out.println(calificacion1.getinfoCalificacion());
+    System.out.println(calificacion2.getinfoCalificacion());
    
    
     

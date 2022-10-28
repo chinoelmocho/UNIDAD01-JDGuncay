@@ -9,11 +9,53 @@ package DEBER003;
  * @author David
  */
 public class Calificacion {
-    int totalPreguntas;
-    int preguntasCorrectas;
-    Asignatura nomAsignatura;
-    Estudiante nomEstudiante;
+    private int totalPreguntas;
+    private int preguntasCorrectas;
+    private Asignatura nomAsignatura;
+    private Estudiante nomEstudiante;
 
+    public Calificacion(int totalPreguntas, int preguntasCorrectas, Asignatura nomAsignatura, Estudiante nomEstudiante) {
+        this.totalPreguntas = totalPreguntas;
+        this.preguntasCorrectas = preguntasCorrectas;
+        this.nomAsignatura = nomAsignatura;
+        this.nomEstudiante = nomEstudiante;
+    }
+
+    public int getTotalPreguntas() {
+        return totalPreguntas;
+    }
+
+    public int getPreguntasCorrectas() {
+        return preguntasCorrectas;
+    }
+
+    public Asignatura getNomAsignatura() {
+        return nomAsignatura;
+    }
+
+    public Estudiante getNomEstudiante() {
+        return nomEstudiante;
+    }
+
+    public void setTotalPreguntas(int totalPreguntas) {
+        this.totalPreguntas = totalPreguntas;
+    }
+
+    public void setPreguntasCorrectas(int preguntasCorrectas) {
+        this.preguntasCorrectas = preguntasCorrectas;
+    }
+
+    public void setNomAsignatura(Asignatura nomAsignatura) {
+        this.nomAsignatura = nomAsignatura;
+    }
+
+    public void setNomEstudiante(Estudiante nomEstudiante) {
+        this.nomEstudiante = nomEstudiante;
+    }
+
+    
+    
+    
     public String passMateria() {
         var retorno = "";
         var nota=(this.preguntasCorrectas*10)/this.totalPreguntas;

@@ -9,9 +9,40 @@ package DEBER003;
  * @author David
  */
 public class Pais {
-    String nombrePais;
-    int numeroContinente;
-    String poblacion;
+    private String nombrePais;
+    private int numeroContinente;
+    private String poblacion;
+
+    public Pais(String nombrePais, int numeroContinente, String poblacion) {
+        this.nombrePais = nombrePais;
+        this.numeroContinente = numeroContinente;
+        this.poblacion = poblacion;
+    }
+
+    public String getNombrePais() {
+        return nombrePais;
+    }
+    
+
+    public int getNumeroContinente() {
+        return numeroContinente;
+    }
+
+    public String getPoblacion() {
+        return poblacion;
+    }
+
+    public void setNombrePais(String nombrePais) {
+        this.nombrePais = nombrePais;
+    }
+
+    public void setNumeroContinente(int numeroContinente) {
+        this.numeroContinente = numeroContinente;
+    }
+
+    public void setPoblacion(String poblacion) {
+        this.poblacion = poblacion;
+    }
     
     
     public String getNombreContinente(){

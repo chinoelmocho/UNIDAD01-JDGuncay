@@ -9,10 +9,49 @@ package DEBER003;
  * @author David
  */
 public class Producto {
-     String tipoProducto;
-    double precioProducto;
-    String numSerie;
-    int cantidad;
+     private String tipoProducto;
+    private double precioProducto;
+    private String numSerie;
+    private int cantidad;
+
+    public Producto(String tipoProducto, double precioProducto, String numSerie, int cantidad) {
+        this.tipoProducto = tipoProducto;
+        this.precioProducto = precioProducto;
+        this.numSerie = numSerie;
+        this.cantidad = cantidad;
+    }
+
+    public String getTipoProducto() {
+        return tipoProducto;
+    }
+
+    public double getPrecioProducto() {
+        return precioProducto;
+    }
+
+    public String getNumSerie() {
+        return numSerie;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setTipoProducto(String tipoProducto) {
+        this.tipoProducto = tipoProducto;
+    }
+
+    public void setPrecioProducto(double precioProducto) {
+        this.precioProducto = precioProducto;
+    }
+
+    public void setNumSerie(String numSerie) {
+        this.numSerie = numSerie;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
     
     public double getPromociones(){
     var retorno =0.0d;
